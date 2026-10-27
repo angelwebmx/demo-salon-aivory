@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salón Aivory · Salón de eventos en Tuxtla Gutiérrez</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF8F2;--ink:#1E2A2B;--muted:#546163;--card:#fff;--line:#E3DCCB;--acc:#0E5A4F;--gold:#A9792B;--on-acc:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A19;--ink:#F2EEE4;--muted:#A8B5B2;--card:#172625;--line:#2B3F3C;--acc:#3FA690;--gold:#D9B26A;--on-acc:#0B1514;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101A19;--ink:#F2EEE4;--muted:#A8B5B2;--card:#172625;--line:#2B3F3C;--acc:#3FA690;--gold:#D9B26A;--on-acc:#0B1514;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05;margin:0}
+.rule{height:5px;background:var(--gold)}
+main{max-width:760px;margin:0 auto;padding:0 22px 44px}
+.brand{font-size:1.5rem;padding:22px 0 0;color:var(--acc);font-family:"Cormorant Garamond",Georgia,serif;font-weight:700}
+h1{font-size:clamp(2.7rem,10vw,4.4rem);margin:28px 0 0}
+h2{font-size:2rem;margin-bottom:16px}
+.lead{color:var(--muted);max-width:32em;margin:16px 0 26px;font-size:1.05rem}
+.quote{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:grid;gap:14px;box-shadow:0 8px 28px rgba(30,42,43,.08)}
+.quote h2{font-size:1.6rem;margin:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:480px){.two{grid-template-columns:1fr}}
+label{font-weight:600;font-size:.92rem;display:grid;gap:6px}
+select,input{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:12px;width:100%}
+.btn{display:block;text-align:center;background:var(--acc);color:var(--on-acc);font-weight:700;text-decoration:none;padding:15px 18px;border-radius:10px}
+a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hint{margin:0;color:var(--muted);font-size:.9rem}
+section{padding:44px 0 0}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;padding:0;list-style:none;margin:0}
+@media (max-width:480px){.feat{grid-template-columns:1fr}}
+.feat li{padding-left:22px;position:relative}
+.feat li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.feat b{display:block}
+.feat span{color:var(--muted);font-size:.95rem}
+ol{list-style:none;padding:0;margin:0;display:grid;gap:18px;counter-reset:s}
+ol li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+ol li::before{content:counter(s);font-family:"Cormorant Garamond",Georgia,serif;font-size:2.4rem;line-height:1;color:var(--gold);font-weight:700}
+ol p{margin:2px 0 0;color:var(--muted)}
+.rating{display:flex;align-items:baseline;gap:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;margin-top:44px}
+.rating .n{font-size:3.6rem;color:var(--acc)}
+.rating p{margin:0;color:var(--muted)}
+.contact p{margin:0 0 8px}
+.contact a{color:var(--acc);font-weight:600}
+footer{color:var(--muted);font-size:.9rem;margin-top:36px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="rule" aria-hidden="true"></div>
+<main>
+<div class="brand">Salón Aivory</div>
+<h1>Tu evento, resuelto en un solo lugar</h1>
+<p class="lead">Bodas, XV años, cumpleaños y eventos de empresa en Tuxtla Gutiérrez. Cuéntanos tu fecha y te respondemos con disponibilidad y paquete.</p>
+
+<div class="quote">
+<h2>Cotiza tu evento</h2>
+<label>Tipo de evento
+<select id="t"><option>Boda</option><option>XV años</option><option>Cumpleaños</option><option>Bautizo o primera comunión</option><option>Evento de empresa</option></select></label>
+<div class="two">
+<label>Invitados (aprox.)<input id="n" type="number" min="1" inputmode="numeric" placeholder="Ejemplo: 150"></label>
+<label>Fecha deseada<input id="d" type="date"></label>
+</div>
+<a id="go" class="btn" href="#" target="_blank" rel="noopener">Pedir cotización por WhatsApp</a>
+<p class="hint">Sin compromiso. Respondemos con fechas libres y opciones de paquete.</p>
+</div>
+
+<section>
+<h2>Todo lo que necesitas para tu celebración</h2>
+<ul class="feat">
+<li><b>Salón con aire acondicionado</b><span>Cómodo en cualquier época del año.</span></li>
+<li><b>Estacionamiento</b><span>Para que tus invitados lleguen sin complicaciones.</span></li>
+<li><b>Barra y bebidas</b><span>Servicio de bar durante el evento.</span></li>
+<li><b>Comida y botanas</b><span>Menú para tu evento, con antojitos como esquites.</span></li>
+<li><b>DJ y sonido</b><span>Música y ambiente incluidos en tu celebración.</span></li>
+<li><b>Vista panorámica</b><span>Un fondo especial para tus fotos.</span></li>
+</ul>
+</section>
+
+<section>
+<h2>Así de fácil</h2>
+<ol>
+<li><div><h3>Cuéntanos tu evento</h3><p>Tipo, fecha e invitados, en menos de un minuto.</p></div></li>
+<li><div><h3>Recibe tu propuesta</h3><p>Te contestamos por WhatsApp con disponibilidad y paquete.</p></div></li>
+<li><div><h3>Visita y aparta tu fecha</h3><p>Conoce el salón en persona y asegura tu día.</p></div></li>
+</ol>
+</section>
+
+<div class="rating"><span class="serif n">4.8</span><p>en Google, con más de 1,300 reseñas de familias que celebraron aquí.</p></div>
+
+<section class="contact">
+<h2>Visítanos</h2>
+<p>Crucecitas 150, Ampliación Francisco I. Madero, Tuxtla Gutiérrez, Chiapas.</p>
+<p><a href="https://maps.google.com/?cid=17423609113764477649" target="_blank" rel="noopener">Cómo llegar</a> · <a href="tel:+529614638409">961 463 8409</a></p>
+<p class="hint">Atención: lunes a viernes de 7:00 a 21:30, sábado de 17:00 a 19:00. Domingo cerrado.</p>
+</section>
+
+<footer>Página de demostración.</footer>
+</main>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function upd(){
+var t='Hola, quiero cotizar un evento en Salón Aivory. Tipo de evento: '+$('t').value+'.';
+var n=$('n').value.trim();
+if(n){t+=' Invitados aproximados: '+n+'.';}
+if($('d').value){
+var f=new Date($('d').value+'T12:00:00').toLocaleDateString('es-MX',{day:'numeric',month:'long',year:'numeric'});
+t+=' Fecha deseada: '+f+'.';
+}
+$('go').href='https://wa.me/529614638409?text='+encodeURIComponent(t);
+}
+['t','n','d'].forEach(function(i){$(i).addEventListener('input',upd)});
+upd();
+})();
+</script>
+</body>
+</html>
